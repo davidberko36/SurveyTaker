@@ -20,6 +20,7 @@ class RegularUser(User):
 
 class Survey(models.Model):
     title = models.CharField(max_length=255)
+    description = models.TextField(blank = True, null = True)
 
 
 class Question(models.Model):
